@@ -10,8 +10,8 @@ public class BankAccount {
 
     private static final String routingNumber = "013546";
 
-    String name;
-    String ssn;
+    private String name;
+    private String ssn;
     String accountType;
     double balance;
 
@@ -37,7 +37,25 @@ public class BankAccount {
         System.out.println("INITIAL DEPOSIT OF: " +initDeposit);
     }
 
+    // Getters and Setters
+    // Allow the user to define the name.
 
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = "Mr. " +name;
+    }
+
+    public String getSsn() {
+        return ssn;
+    }
+
+    public void setSsn(String ssn) {
+        this.ssn = ssn;
+    }
 
     public void deposit(double amount){
 

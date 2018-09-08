@@ -8,7 +8,15 @@ public class BankAccountApp {
 
         BankAccount acc1 = new BankAccount();
         acc1.accountNumber = "012345"; // not the static variable
-        acc1.name = "Roger Hue";
+      //  acc1.name = "Roger Hue";
+      //  With Encapsulation : Public API Methods.
+        acc1.setName("Roger Hue");
+        System.out.println(acc1.getName());
+
+        acc1.setSsn("1234567");
+        System.out.println("SSN: " +acc1.getSsn());
+
+
         acc1.balance = 10000;
         System.out.println(acc1.toString());
 
@@ -27,7 +35,7 @@ public class BankAccountApp {
 
         CDAccount cd1 = new CDAccount();
         cd1.balance = 3000;
-        cd1.name = "Juan";
+      //  cd1.name = "Juan";
         cd1.accountType = "CD Account";
         System.out.println(cd1.toString());
 
