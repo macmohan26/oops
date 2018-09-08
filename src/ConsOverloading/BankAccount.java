@@ -1,6 +1,6 @@
 package ConsOverloading;
 
-public class BankAccount {
+public class BankAccount implements IRate {
     // Define variables
 
     String accountNumber = "1234567";
@@ -55,6 +55,16 @@ public class BankAccount {
 
     public void setSsn(String ssn) {
         this.ssn = ssn;
+    }
+
+    @Override
+    public void setRate() {
+        System.out.println("SETTING RATE");
+    }
+
+    @Override
+    public void increaseRate() {
+        System.out.println("INCREASING RATE");
     }
 
     public void deposit(double amount){
