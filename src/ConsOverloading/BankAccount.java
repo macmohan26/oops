@@ -21,6 +21,7 @@ public class BankAccount implements IRate {
        // 3. The same name as the class itself.
        // 4. Constructors have No return type.
 
+
     BankAccount(){
         System.out.println("NEW ACCOUNT CREATED");
     }

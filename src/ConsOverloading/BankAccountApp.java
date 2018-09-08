@@ -18,12 +18,17 @@ public class BankAccountApp {
 
 
         acc1.balance = 10000;
+
+        // Polymorphism through overriding.
+
         System.out.println(acc1.toString());
 
         // getting access from interface methods.
 
         acc1.setRate();
         acc1.increaseRate();
+
+        // Polymorphism through overloading.
 
         BankAccount acc2 = new BankAccount("Checking Account");
         acc2.accountNumber = "012346"; // not the static variable
