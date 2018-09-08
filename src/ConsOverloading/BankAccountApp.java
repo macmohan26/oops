@@ -19,9 +19,9 @@ public class BankAccountApp {
 
         acc3.accountNumber = "012347"; // not the static variable
 
-        System.out.println( " Bank Branch Routing Number is: " + acc1.routingNumber); // routingNumber the static variable
-        System.out.println( " Bank Branch Routing Number is: " + acc2.routingNumber);
-        System.out.println( " Bank Branch Routing Number is: " + acc3.routingNumber);
+//        System.out.println( " Bank Branch Routing Number is: " + acc1.routingNumber); // routingNumber the static variable
+//        System.out.println( " Bank Branch Routing Number is: " + acc2.routingNumber);
+//        System.out.println( " Bank Branch Routing Number is: " + acc3.routingNumber);
 
         // Demo for Inheritance
 

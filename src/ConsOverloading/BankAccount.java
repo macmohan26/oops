@@ -3,11 +3,13 @@ package ConsOverloading;
 public class BankAccount {
     // Define variables
 
-    String accountNumber;
+    String accountNumber = "1234567";
 
     // static >> belongs to the CLASS not the object instance.
     // final  >> constant (often static final)'
-    static final String routingNumber = "013546";
+
+    private static final String routingNumber = "013546";
+
     String name;
     String ssn;
     String accountType;
@@ -37,15 +39,29 @@ public class BankAccount {
 
 
 
-    void deposit(){
+    public void deposit(double amount){
+
+        balance = balance + amount;
+        showActivity("DEPOSIT");
 
     }
 
-    void withdraw(){
+    void withdraw(double amount){
 
+        balance = balance + amount;
+        showActivity("WITHDRAW");
+    }
+
+    // showActivity method only available in class because it is using "private" keyword.
+
+    private void showActivity( String activity){
+
+        System.out.println("YOUR RECENT TRANSACTION: " + activity);
+        System.out.println("YOUR NEW BALANCE IS: $" + balance);
     }
 
     void checkBalance(){
+
 
     }
 
@@ -55,6 +71,6 @@ public class BankAccount {
 
     @Override
     public String toString(){
-        return "[ " + name + " . " + accountType + ". BALANCE:  $" + balance + " ]";
+        return "[ NAME: " + name + " . ACCOUNT # " + accountNumber + ". ROUTING # " + routingNumber +  ". BALANCE:  $ " + balance + " ]";
     }
 }
