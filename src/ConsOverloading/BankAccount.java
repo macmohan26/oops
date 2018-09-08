@@ -4,7 +4,10 @@ public class BankAccount {
     // Define variables
 
     String accountNumber;
-    String routingNumber;
+
+    // static >> belongs to the CLASS not the object instance.
+    // final  >> constant (often static final)'
+    static final String routingNumber = "013546";
     String name;
     String ssn;
     String accountType;
