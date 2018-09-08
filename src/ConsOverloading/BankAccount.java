@@ -11,6 +11,7 @@ public class BankAccount {
     String name;
     String ssn;
     String accountType;
+    double balance;
 
     // Constructor definitions: unique methods
        // 1. They are used to define / setup / initialize properties of an object.
@@ -34,6 +35,8 @@ public class BankAccount {
         System.out.println("INITIAL DEPOSIT OF: " +initDeposit);
     }
 
+
+
     void deposit(){
 
     }
@@ -48,5 +51,10 @@ public class BankAccount {
 
     void getStatus(){
 
+    }
+
+    @Override
+    public String toString(){
+        return "[ " + name + " . " + accountType + ". BALANCE:  $" + balance + " ]";
     }
 }
